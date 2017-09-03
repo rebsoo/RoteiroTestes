@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nova-gui';
+
+   aluno: Aluno = {nome: "", cpf: "", email: ""};
+}
+
+export class Aluno {
+  nome: string;
+  cpf: string;
+  email: string;
 }
