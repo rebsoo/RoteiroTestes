@@ -9,11 +9,12 @@ import { NgModule } from '@angular/core';
 export class AppComponent {
   title = 'nova-gui';
 
-   aluno: Aluno = {nome: "", cpf: "", email: ""};
+   aluno: Aluno = {nome: "Digite...", cpf: "Digite...", email: "Digite...", login: "Digite..."};
 }
 
 export class Aluno {
   nome: string;
   cpf: string;
   email: string;
+  login: string;
 }
