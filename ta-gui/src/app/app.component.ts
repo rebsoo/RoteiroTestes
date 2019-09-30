@@ -10,10 +10,6 @@ import { AlunoService } from './aluno.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-
-  title = 'ta-gui';
-
    constructor(private alunoService: AlunoService) {}
 
    aluno: Aluno = new Aluno();
@@ -31,10 +27,6 @@ export class AppComponent {
 
    onMove(): void {
       this.cpfduplicado = false;
-   }
-
-   atualizarAluno(aluno: Aluno): void {
-      this.alunoService.atualizar(aluno);
    }
 
 }
